@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="container-text">
+          <h1>
+            <span class="hide" id="prompt"></span>
+            <br>
+            <span id="start-text">Попробуй за 10 попыток угадать число от 1 до </span><span id="maximum">100</span>
+            <span class="hide" id="title">Осталось: <span id="counter"></span> попыток</span>
+            <br />
+            <span class="ansvers" id="ansvers">...</span>
+          </h1>
+        </div>
+        <div class="container-img">
+          <img src="upArrow.png" alt="arrow" class="img hide" id="up" />
+          <img src="downArrow.png" alt="arrow" class="img hide" id="down" />
+          <img src="target.webp" alt="arrow" class="img hide" id="target" />
+          <img src="sad.gif" alt="sad" class="img hide" id="sad" />
+        </div>
+      </div>
+      <div class="content">
+        <input
+          type="number"
+          class="input"
+          id="input"
+          disabled
+          value="0"
+          max="1000"
+        />
+        <button class="btn" id="btn">Start</button>
+      </div>
+      <div class="foother">
+        <p>Уровень сложности:</p>
+        <select name="lvl" id="select" class="select">
+          <option value="1">Easy</option>
+          <option value="2" selected>Medium</option>
+          <option value="3">Hard</option>
+          <option value="4">Insane</option>
+        </select>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
