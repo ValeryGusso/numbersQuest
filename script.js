@@ -96,7 +96,7 @@ const check = () => {
   $counter.textContent = `${counter}`
   if (counter === 0) {
     endGame()
-    $text.textContent = 'Не угадал, попробуй ещё раз'
+    $text.textContent = `Правильный ответ был ${solution}, попробуй ещё раз`
     $sad.classList.remove('hide')
     counter = 10
   }
